@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function About() {
   return (
-    <article className="my-8 md:max-w-5xl md:mx-auto md:flex md:justify-start md:items-center md:gap-10">
+    <article className="my-8 md:max-w-5xl md:mx-auto md:flex md:justify-start md:items-center md:gap-6 lg:gap-10">
       <Image
-        className="mx-auto h-1/2 w-1/2 px-4"
+        className="mx-auto h-full w-full px-4 md:h-1/2 md:w-1/2 md:px-4"
         src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/multor/df213ca0-multor-about_10cs0b400000000000001o.jpg"
         alt=""
         height={250}

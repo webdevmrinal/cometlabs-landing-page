@@ -7,6 +7,12 @@
   font-family: 'Work Sans', sans-serif;
 }
 
+
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 @layer components {
   .scheduleInput{
     @apply flex flex-col w-full my-4 px-4 py-2 rounded-md
