@@ -13,7 +13,7 @@ function Testimonials() {
       <div className="lg:max-w-5xl lg:mx-auto">
         <div className="lg:pb-8">
           <h2 className="text-3xl text-[#152f2e] text-center font-semibold my-10 md-14 md:mx-44 lg:text-5xl lg:mx-64 lg:my-5 lg:pt-10">
-            Show visitors what they're signing up for
+            Show visitors what they&apos;re signing up for
           </h2>
           <p className="text-center mx-10 md:mx-36 lg:mx-60">
             Include a video or photo from one of your sessions to help people
@@ -31,7 +31,7 @@ function Testimonials() {
         </video>
         <div className="px-4 space-y-2 lg:py-8">
           <h4 className="uppercase text-center text-[#00c2c5] text-xs font-semibold tracking-widest mx-16 my-4">
-            Don't just take our word for it
+            Don&apos;t just take our word for it
           </h4>
           <div className="md:pt-8 md:flex md:gap-8 lg:gap-60">
               <section>
@@ -44,7 +44,7 @@ function Testimonials() {
                 </div>
                 <p className="italic text-[#152f2e] leading-5 md:text-xl">
                   Share a real testimonial that hits some of your benefits (but
-                  isn't too sales-y).
+                  isn&apos;t too sales-y).
                 </p>
                 <div className="flex py-4">
                   <Image
