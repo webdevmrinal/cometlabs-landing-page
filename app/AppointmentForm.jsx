@@ -1,16 +1,27 @@
 "use client";
 import React, { useState } from "react";
+import Modal from "./Modal";
+import { useModal } from "./context/ModalContext";
 
-function About() {
+function AppointmentForm() {
+  const { openModal } = useModal();
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
-    appointmentType: "",
+    appointmentType: "Type of Appointment",
   });
   const formSubmitHandler = (e) => {
     e.preventDefault();
+    if (
+      form.firstName &&
+      form.lastName &&
+      form.email &&
+      form.phone &&
+      form.appointmentType != "Type of Appointment"
+    )
+      openModal();
     console.log(form);
   };
   const inputChangeHandler = (e) => {
@@ -25,29 +36,47 @@ function About() {
         Here, let visitors know what will happen when they complete your form.
       </p>
 
-      <from className="text-black" onSubmit={formSubmitHandler}>
+      <form className="text-black" onSubmit={formSubmitHandler}>
         <input
+          name="firstName"
+          value={form.firstName}
           className="scheduleInput"
           onChange={inputChangeHandler}
           placeholder="First Name*"
+          required
         />
         <input
+          name="lastName"
+          value={form.lastName}
           className="scheduleInput"
           onChange={inputChangeHandler}
           placeholder="Last Name*"
+          required
         />
         <input
+          name="email"
+          type="email"
+          value={form.email}
           className="scheduleInput"
           onChange={inputChangeHandler}
           placeholder="Email*"
+          required
         />
         <input
+          name="phone"
+          value={form.phone}
           className="scheduleInput"
           onChange={inputChangeHandler}
           placeholder="Phone Number*"
+          required
         />
-        <select className="scheduleInput" onChange={inputChangeHandler}>
-          <option value={"Type of Appointment"} selected disabled>
+        <select
+          name="appointmentType"
+          value={form.appointmentType}
+          className="scheduleInput"
+          onChange={inputChangeHandler}
+        >
+          <option value={"Type of Appointment"} disabled>
             Type of Appointment
           </option>
           <option value={"Option 1"}>Option 1</option>
@@ -60,9 +89,9 @@ function About() {
         >
           Schedule Now
         </button>
-      </from>
+      </form>
     </article>
   );
 }
 
-export default About;
+export default AppointmentForm;
