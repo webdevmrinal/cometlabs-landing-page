@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CometLabs Landing Page
+
+This repository contains the code for the CometLabs Landing Page. The project is built using Next.js, a popular React framework, and Tailwind CSS for styling. The design is inspired by the [Multor Landing Page Template](https://unbounce.com/landing-page-template/multor/).
+
+## Project Structure
+
+The project is organized as follows:
+
+- `app/`: This directory contains the main application components. Each component corresponds to a section of the landing page. For example, `Hero.jsx` is the component for the hero section of the landing page, `Features.jsx` for the features section, and so on. The `context/` subdirectory contains the React context for the modal component.
+- `public/`: This directory contains static assets such as images and videos.
+- `.eslintrc.json`: This file contains the configuration for ESLint, a tool for identifying and reporting on patterns in JavaScript.
+- `next.config.js`: This file is used for customizing the behavior of Next.js.
+- `postcss.config.js` and `tailwind.config.js`: These files are used for configuring PostCSS and Tailwind CSS respectively.
+- `package.json`: This file contains the list of project dependencies and scripts.
+
+## Dependencies
+
+The project uses the following main dependencies:
+
+- `next`: The React framework for building the application.
+- `react` and `react-dom`: React library and the DOM manipulation library.
+- `react-icons`: Used for displaying icons in the application.
+- `tailwindcss`: A utility-first CSS framework for rapidly building custom user interfaces.
+- `autoprefixer`: A tool to parse CSS and add vendor prefixes to CSS rules.
+- `eslint` and `eslint-config-next`: Tools for identifying and reporting on patterns in JavaScript, and the ESLint configuration for Next.js.
+- `postcss`: A tool for transforming CSS with JavaScript.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+- `npm run dev`: Runs the app in the development mode.
+- `npm run build`: Builds the app for production.
+- `npm run start`: Runs the compiled app in production mode.
+- `npm run lint`: Runs the linter to check for code quality issues.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Clone the repository: `git clone https://github.com/webdevmrinal/cometlabs-landing-page.git`
+2. Navigate into the directory: `cd cometlabs-landing-page`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now, open [http://localhost:3000](http://localhost:3000) to view the application in the browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<video src="./public/testimonial_video.mp4" width=180 />
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
